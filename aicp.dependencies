@@ -10,6 +10,16 @@
     "branch":      "cm-11.0"
   },
   {
+    "repository": "AICP/proprietary_vendor_samsung_t0lte",
+    "target_path": "vendor/samsung/t0lte",
+    "branch": "kitkat"
+   },
+  {
+     "repository": "AICP/proprietary_vendor_samsung_smdk4412-common",
+     "target_path": "vendor/samsung/smdk4412-common",
+     "branch": "kitkat"
+  },
+  {
     "repository":  "omnirom/android_kernel_samsung_smdk4412",
     "target_path": "kernel/samsung/smdk4412",
     "branch":      "android-4.4"

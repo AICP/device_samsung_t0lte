@@ -20,8 +20,8 @@
      "branch": "kitkat"
   },
   {
-    "repository":  "omnirom/android_kernel_samsung_smdk4412",
+    "repository":  "CyanogenMod/android_kernel_samsung_smdk4412",
     "target_path": "kernel/samsung/smdk4412",
-    "branch":      "android-4.4"
+    "branch":      "cm-11.0"
   }
 ]

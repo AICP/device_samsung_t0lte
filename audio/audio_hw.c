@@ -684,17 +684,6 @@ static void select_mode(struct m0_audio_device *adev)
                     ALOGE("%s: csd_stop_voice error %d\n", __func__, err);
                 }
             }
-            //Force Input Standby
-            adev->in_device = AUDIO_DEVICE_NONE;
-
-            ALOGD("%s: set voicecall route: voicecall_default_disable", __func__);
-            set_bigroute_by_array(adev->mixer, voicecall_default_disable, 1);
-            ALOGD("%s: set voicecall route: default_input_disable", __func__);
-            set_bigroute_by_array(adev->mixer, default_input_disable, 1);
-            ALOGD("%s: set voicecall route: headset_input_disable", __func__);
-            set_bigroute_by_array(adev->mixer, headset_input_disable, 1);
-            ALOGD("%s: set voicecall route: bt_disable", __func__);
-            set_bigroute_by_array(adev->mixer, bt_disable, 1);
 
             force_all_standby(adev);
             select_output_device(adev);
@@ -820,9 +809,7 @@ static void select_output_device(struct m0_audio_device *adev)
 
 static void select_input_device(struct m0_audio_device *adev)
 {
-    int input_device = AUDIO_DEVICE_BIT_IN | adev->in_device;
-
-    switch(input_device) {
+    switch(adev->in_device) {
         case AUDIO_DEVICE_IN_BUILTIN_MIC:
             ALOGD("%s: AUDIO_DEVICE_IN_BUILTIN_MIC", __func__);
             break;

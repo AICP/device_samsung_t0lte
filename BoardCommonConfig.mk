@@ -69,3 +69,5 @@ BOARD_SEPOLICY_UNION += \
     ueventd.te \
     wpa_supplicant.te
 
+# External apps on SD
+TARGET_EXTERNAL_APPS = sdcard1

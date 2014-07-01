@@ -20,6 +20,11 @@
      "branch": "kitkat"
   },
   {
+     "repository": "CyanogenMod/android_packages_apps_SamsungServiceMode",
+     "target_path": "packages/apps/SamsungServiceMode",
+     "branch":      "cm-11.0"
+  },
+  {
     "repository":  "CyanogenMod/android_kernel_samsung_smdk4412",
     "target_path": "kernel/samsung/smdk4412",
     "branch":      "cm-11.0"

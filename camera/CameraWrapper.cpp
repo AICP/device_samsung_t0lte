@@ -125,8 +125,7 @@ static char * camera_fixup_getparams(int id, const char * settings)
     }
 #endif
 
-    /* We do support it, so announce it */
-    params.set(android::CameraParameters::KEY_VIDEO_SNAPSHOT_SUPPORTED, "true");
+    params.set(android::CameraParameters::KEY_SUPPORTED_ISO_MODES, iso_values[id]);
 
     ALOGV("%s: fixed parameters:", __func__);
     //params.dump();

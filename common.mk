@@ -34,9 +34,9 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 PRODUCT_PACKAGES += \
     tiny_hw
 
-# Camera
+# Camera Wrapper
 PRODUCT_PACKAGES += \
-    camera.smdk4x12
+    camera.exynos4
 
 # Product specific Packages
 PRODUCT_PACKAGES += \
@@ -53,10 +53,6 @@ PRODUCT_PACKAGES += \
     libnfc_jni \
     Nfc \
     Tag
-
-# Camera Wrapper 
-PRODUCT_PACKAGES += \
-    camera.exynos4
 
 PRODUCT_COPY_FILES += \
     packages/apps/Nfc/migrate_nfc.txt:system/etc/updatecmds/migrate_nfc.txt \

@@ -72,7 +72,8 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
-    mobiledata.interfaces=pdp0,gprs,ppp0,rmnet0,rmnet1
+    ro.telephony.ril_class=SamsungQualcommRIL \
+    mobiledata.interfaces=pdp0,wlan0,gprs,ppp0
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \

@@ -5,9 +5,9 @@
         "branch": "lp5.0"
     },
     {
-        "repository": "CyanogenMod/android_kernel_samsung_smdk4412",
+        "repository": "AICP/kernel_samsung_smdk4412",
         "target_path": "kernel/samsung/smdk4412",
-        "branch": "cm-12.0"
+        "branch": "lp5.0"
     },
     {
         "repository": "CyanogenMod/android_hardware_samsung",
@@ -20,8 +20,8 @@
         "branch": "lp5.0"
     },
     {
-        "repository": "CyanogenMod/android_device_samsung_smdk4412-qcom-common",
+        "repository": "AICP/device_samsung_smdk4412-qcom-common",
         "target_path": "device/samsung/smdk4412-qcom-common",
-        "branch": "cm-11.0"
+        "branch": "lp5.0"
     }
 ]
